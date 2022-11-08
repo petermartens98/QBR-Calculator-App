@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>QBR Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>QBR Calculator</h1>
+        <div class="image">
+            <img src="football.webp" alt="football" style="height: 100px;">
+        </div>
+        <form id="qbrCalcForm" class="form">
+            <label for="">Touchdowns</label>
+            <input class="number-input" min="0" type="number" id="tdAmount">
+
+            <label for="">Interceptions</label>
+            <input class="number-input" min="0" type="number" id="intAmount">
+
+            <label for="">Completions</label>
+            <input class="number-input" min="0" type="number" id="compAmount">
+
+            <label for="">Attempts</label>
+            <input class="number-input" min="0" type="number" id="attAmount">
+
+            <label for="">Passing Yards</label>
+            <input class="number-input" min="0" type="number" id="ydsAmount">
+
+            <button type="submit" class="btn">Calculate QBR</button>
+        </form>
+        <h3 class="qbr-display" id="qbrDisplay">QBR</h3>
+    </div>
+</body>
+</html>
